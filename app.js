@@ -4,16 +4,17 @@ import {
   View,
 } from 'react-native'
 
+import Reseau from './components/react-native-reseau'
+
 export default function () {
   return (
     <View
       style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+        // TODO: Use a more graceful way to avoid overlapping content and head
+        paddingTop: 20
       }}
     >
-      <Text>React Native Env</Text>
+      <Reseau></Reseau>
     </View>
   )
 }

@@ -1,0 +1,3 @@
+[submodule "components/react-native-reseau"]
+	path = components/react-native-reseau
+	url = git@github.com:jaychsu/react-native-reseau.git
