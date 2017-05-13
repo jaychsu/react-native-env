@@ -8,7 +8,11 @@ import {
 import Reseau, {
   formatUriSource,
 } from './components/react-native-reseau'
-import mockData from './tests/mock-data-static'
+
+// import mockData from './tests/mock-data-static'
+
+import getMockData from './tests/mock-data'
+const mockData = getMockData(5)
 
 const renderRow = (rowData, sectionID, rowID) => (
   <View

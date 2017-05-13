@@ -61,9 +61,9 @@ export default function getMockData(dataLength: number, srcType: 'http' | 'local
   let result = []
   for (let i = 0; i < dataLength; i++) {
     result.push({
-      g: pickRandomItemFromArray(mockGroupName, true),
       o: getRandomNumber(100),
-      p: getRandomNumber(5),
+      // g: pickRandomItemFromArray(mockGroupName, true),
+      // p: getRandomNumber(5),
       s: pickRandomItemFromArray(imgSrc),
       t: pickRandomItemFromArray(mockTitle),
     })
