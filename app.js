@@ -25,7 +25,7 @@ const renderRow = (rowData, sectionID, rowID) => (
     }}
   >
     <Image
-      source={formatUriSource(rowData.s)}
+      source={formatUriSource(rowData.src)}
       style={{
         width: 64,
         height: 64,
@@ -39,7 +39,7 @@ const renderRow = (rowData, sectionID, rowID) => (
       ellipsizeMode='tail'
       numberOfLines={1}
     >
-      {rowID}-{rowData.t}
+      {rowID}-{rowData.title}
     </Text>
   </View>
 )
