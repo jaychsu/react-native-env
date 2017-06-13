@@ -44,7 +44,7 @@ const mockTitle = [
 
 function pickRandomItemFromArray(arr, isEmptyAllowed = false) {
   const length = isEmptyAllowed
-    ? arr.length + 1
+    ? arr.length * 1.5
     : arr.length
   const index = getRandomNumber(length)
   return arr[index]
@@ -61,7 +61,7 @@ export default function getMockData(dataLength: number, srcType: 'http' | 'local
   let result = []
   for (let i = 0; i < dataLength; i++) {
     result.push({
-      o: getRandomNumber(100),
+      o: getRandomNumber(10) % 2 ? getRandomNumber(100) : undefined,
       g: pickRandomItemFromArray(mockGroupName, true),
       src: pickRandomItemFromArray(imgSrc),
       title: pickRandomItemFromArray(mockTitle),
