@@ -11,8 +11,12 @@ export default function () {
   return (
     <View
       style={{
-        // TODO: Use a more graceful way to avoid overlapping content and head
-        paddingTop: 20,
+        // A hacking to make this view could be fullscreen
+        flex: 1,
+        width: null, // remove width and height to override fixed static size
+        height: null,
+
+        paddingTop: 20, // TODO: Use a more graceful way to avoid overlapping content and head
         backgroundColor: '#bababa',
       }}
     >
